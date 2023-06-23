@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/3.1.0/full.css" integrity="sha512-IOfCi2/909BLx+GWGDo3PCETz629NokkjqMt0gIItgvVuaDrfW8wbDXzYddOTYuzOTXvpemNnx+e4naHDE/DNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<style>
+@font-face {
+    font-family: 'EliceDigitalBaeum-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.inkLip{
+  font-family: "InkLipquid";
+}
+.chief {
+ font-family: 'Nanum Brush Script', cursive;
+}
+
+.developer{
+  font-family: "EliceDigitalBaeum-Bd";
+}
+
+.container {
+  height: 100vh; /* 화면 전체 높이 */
+  overflow-y: scroll; /* 수직 스크롤 사용 */
+  scroll-snap-type: y mandatory; /* 수직 스크롤 시 스냅 스크롤 적용 */
+}
+
+.snap-section {
+  height: 100vh; /* 패널의 높이를 화면 전체 높이로 설정 */
+  scroll-snap-align: start; /* 패널을 스냅 스크롤 위치에 정렬 */
+}
+</style>
+ 
+  
+  <title>Document</title>
+</head>
+<body class="relative">
+  <div class="fixed w-full top-10 chief">
+    <ul class="mx-auto font-bold flex justify-around w-1/2 text-xl text-white">
+      <li class=""><a href="./index.html">Home</a></li>
+      <li class=""><a href="./about.html">About me</a></li>
+      <li class=""><a href="./use.html">I can use</a></li>
+      <li><a href="./contact.html">contact</a></li>
+    </ul>
+  </div>
+  <div class="h-screen pt-20 snap-section" style="background-color: #9d949e;">
+    <div class="wrapper h-full w-3/4 mx-auto">
+      <div class="ab-1 h-full flex items-center">
+        <img class="rounded-3xl w-96 mr-4" src="./img/me3.jpg" alt="">
+        <div class="text-box">
+          <div class="gachigwan text-white w-3/4 ">
+            <h2 class="developer font-bold text-2xl">[개발자가 된 계기-<span class="inkLip">“새로운 세상과의 마주침”</span>]</h2>
+            <span>저는 비전공자로써 평생 해온 일은 15살 때 부터 요리를 시작하여 <br>22년 11월까지 평생 요리만 해왔습니다.</span>
+            <br>
+            <span>흔들림 없이 걸어온 길이며 주변에서도 호평을 받고 20대 초반에는 실장 혹은 팀장을 맡을 수 있을 정도의 신망을 받았습니다.</span>
+            <br>
+            <span>어느 날 이 시장의 미래가 밝지 않다는 것을 깨달았으며 미래에 대한 걱정이 들 때 즈음 다른 길을 걸어 봐야겠다는 생각이 들었습니다.</span>
+            <br>
+            <span>그 후 발견한 길은 현재의 제가 몸 담고 싶어하는 개발 업계입니다. 
+              <br>시시각각 바뀌는 트렌드, 끊임없이 발전해 나가는 기술.
+              <br> 이것들을 제가 배울 수 있다면 ‘정체해 있지 않고 끊임없는 성장을 할 수 있겠다.’라는 확신을 가지고 개발자를 꿈꾸게 되었습니다.</span>
+          </div>
+          <div class="jwawoo text-white w-3/4 mt-10 text-right ">
+            <h2 class="developer font-bold text-2xl">[좌우명-<span class="inkLip">“다른 사람이 행동하기를 기다리지 말고 먼저 행동 할 것”</span>]</h2>
+            <span>하기 싫은 일을 하고 싶어하는 사람은 없습니다.</span>
+            <br>
+            <span>그렇다면 다른 사람의 행동을 기다리기 보다는 <br> 앞장서서 먼저 행동하는 것이 그 사람과 함께 걸을 수 있는<br> 가장 좋은 방법이라 생각 합니다.</span>
+          </div>
+
+        </div>
+      </div>
+  </body>
+  </html>
